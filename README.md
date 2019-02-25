@@ -132,6 +132,14 @@ The attempted insert will be denied as this user is not privileges.
 
 Excercise 3
 
+The syntax for full back up of all the databases is as follow:
+
+mysqldump --all-databases > dump.sql.
+
+To restore all of the databases is as follows:
+mysql < dump.sql.
+
+The back up should be stored outside the docker container so one do not riscing to loose the data.
 
 
 
